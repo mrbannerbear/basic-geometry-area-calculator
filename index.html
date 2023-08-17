@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f49b128aef.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-[poppins]">
+    
+    <main  class="grid grid-cols-3 p-10 row-start-auto">
+        <section class="col-span-2 grid grid-cols-3 gap-4 row-auto">
+
+            <div class="card bg-base-100 border-[1px] border-neutral-700 px-3 rounded-md">
+            <figure><img class="mt-4 w-[250px] h-[150px]" src="images/rectangle.png" alt="rectangle" /></figure>
+            <div class="card-body text-neutral-700">
+              <h2 class="font-semibold text-xl text-center">Rectangle</h2>
+              <p class="text-center">Area = b x h</p>
+              <p class="flex justify-center gap-3">
+                <input type="number" id="rectBase" class="pl-2 rounded-md w-[80px] bg-base-200" placeholder="base">
+                <input type="number" id="rectHeight" class="pl-2 rounded-md w-[80px] bg-base-200" placeholder="height">
+            </p>
+              <div class="card-actions justify-end mt-3">
+                <button id="btn1" onclick="calc(this)" class="btn bg-blue-300 w-full">Calculate</button>
+              </div>
+            </div>
+            </div>
+
+            <div class="card bg-base-100 border-[1px] border-neutral-700 px-3 rounded-md">
+            <figure><img class="mt-4 w-[200px] h-[150px]" src="images/triangle.png" alt="rectangle" /></figure>
+            <div class="card-body text-neutral-700">
+              <h2 class="font-semibold text-xl text-center">Triangle</h2>
+              <p class="text-center">Area = 0.5 x b x h</p>
+              <p class="flex justify-center gap-3"> 
+                <input type="number" id="triBase" class="pl-2 rounded-md w-[80px] bg-base-200" placeholder="base">
+                <input type="number" id="triHeight" class="pl-2 rounded-md w-[80px] bg-base-200" placeholder="height">
+            </p>
+              <div class="card-actions justify-end mt-3">
+                <button id="btn1" onclick="calc(this)" class="btn bg-blue-300 w-full">Calculate</button>
+              </div>
+            </div>
+            </div>
+
+
+        </section>
+
+        <section class="text-neutral-700 border-[1px] sticky top-2 h-[300px] border-neutral-700 rounded-md py-2 px-5">
+            <h2 class="text-2xl text-center font-semibold underline">Calculate Area!</h2>
+            <div id="area">
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="area.js"></script>
+</body>
+</html>
